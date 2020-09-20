@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+html, body {
+  font-family: 'Nunito', Arial, sans-serif;
+  background-color: #f5cdaa;
+  margin: 0;
+  color: #5d5b6a;
+  line-height: 1.5;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  margin: auto;
+  width: 100%;
+  z-index: 1;
+  color: #cfb495;
+}
+
+nav h1 {
+  text-align: center;
+  background-color: #758184;
+  margin: 0;
+  padding: 10px;
+}
+
+nav .main-navbar {
+  height: 250px;
+  overflow-y: auto;
+  overflow-x: hide;
+  background-color: #5d5b6a;
+  padding-left: 15px;
+  margin: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  color: #FFF;
+}
+
+nav a:hover {
+  color: #f5cdaa;
+}
+
+main {
+  position: relative;
+  margin-top: 310px;
+  padding: 0 20px;
+}
+
+main h2 {
+  margin: 0;
+  color: #000;
+}
+
+main h3 {
+  color: #758184;
+}
+
+main p {
+  padding-left: 20px;
+}
+
+main a {
+  color: #758184;
+}
+
+pre {
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+pre code {
+  border-radius: 5px;
+  margin-left: 40px;
+}
+
+.inline {
+  padding: 0.2em;
+  color: #000;
+  background-color: #cfb495;
+}
+
+@media screen and (min-width: 720px) {
+  nav {
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+  }
+  nav h1 {
+    z-index: 1;
+  }
+  nav .main-navbar {
+    height: calc(100% - 56px);
+  }
+  main {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 290px;
+    padding: 20px;
+    margin-bottom: 80px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

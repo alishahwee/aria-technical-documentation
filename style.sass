@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap')
+
+$primary-color: #5d5b6a
+$secondary-color: #758184
+$complementary-color-1: #cfb495
+$complementary-color-2: #f5cdaa
+
+html, body
+  font-family: 'Nunito', Arial, sans-serif
+  background-color: $complementary-color-2
+  margin: 0
+  color: $primary-color
+  line-height: 1.5
+
+nav 
+  position: absolute
+  top: 0
+  margin: auto
+  width: 100%
+  z-index: 1
+  color: $complementary-color-1
+  
+  h1
+    text-align: center
+    background-color: $secondary-color
+    margin: 0 
+    padding: 10px
+    
+  .main-navbar 
+    height: 250px
+    overflow-y: auto
+    overflow-x: hide
+    background-color: $primary-color
+    padding-left: 15px
+    margin: 0
+    
+  li
+    list-style: none
+    
+  a 
+    text-decoration: none
+    display: block
+    padding: 15px
+    color: #FFF
+    
+  a:hover
+    color: $complementary-color-2
+  
+main
+  position: relative
+  margin-top: 310px
+  padding: 0 20px
+  
+  h2
+    margin: 0
+    color: #000
+    
+  h3
+    color: $secondary-color
+    
+  p
+    padding-left: 20px
+    
+  a
+    color: $secondary-color
+  
+pre 
+  white-space: pre-wrap
+  line-height: 1.5
+  
+  code
+    border-radius: 5px
+    margin-left: 40px
+  
+.inline 
+  padding: 0.2em
+  color: #000
+  background-color: $complementary-color-1
+
+@media screen and (min-width: 720px)
+  nav
+    position: fixed
+    width: 280px
+    height: 100vh
+    
+    h1
+      z-index: 1
+    
+    .main-navbar
+      height: calc(100% - 56px)
+  
+  main
+    position: absolute
+    margin-top: 0
+    margin-left: 290px
+    padding: 20px
+    margin-bottom: 80px
